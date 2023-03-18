@@ -270,7 +270,7 @@ function Lib:CreateUI(title)
 	return ui
 end
 
-function Init()
+function InitUILib()
 	return Lib
 end
 
