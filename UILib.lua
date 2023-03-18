@@ -270,6 +270,10 @@ function Lib:CreateUI(title)
 	return ui
 end
 
+function Init()
+	return Lib
+end
+
 local comment = [[
 local window = Lib:CreateUI("LibUI")
 
