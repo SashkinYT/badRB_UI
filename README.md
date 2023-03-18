@@ -5,6 +5,7 @@ Really bad Roblox UI
 ## Connect library
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SashkinYT/badRB_UI/main/UILib.lua"))()
+local Lib = InitUILib()
 ```
 ## Create window:
 ```lua
