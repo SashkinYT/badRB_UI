@@ -21,8 +21,8 @@ function Lib:CreateUI(title)
 	
 	tabFolder.Parent = frame
 
-	frame.Size = UDim2.new(0.3, 0, 0.4, 0)
-	frame.Position = UDim2.new(0,100,0,100)
+	frame.Size = UDim2.new(0, 0, 0, 0)
+	frame.Position = UDim2.new(0.1,0,0.1,0)
 	frameCorner.CornerRadius = UDim.new(0.05, 0.8)
 	frameCorner.Parent = frame
 	frame.BorderSizePixel = 0
@@ -30,7 +30,12 @@ function Lib:CreateUI(title)
 	frame.Parent = gsui
 	frame.ClipsDescendants = true
 	gsui.Parent = coregui
-	
+
+	local Info = TweenInfo.new(1, Enum.EasingStyle.Linear)
+	local target = {Size = UDim2.new(0.3, 0, 0.4, 0)}
+	TweenS:Create(frame, Info, target):Play()
+	wait(0.5)
+
 	local Info = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.In, 2, true, 0.5)
 	local target = {BackgroundColor3 = Color3.new(0.203922, 1, 0.364706)}
 	TweenS:Create(frame, Info, target):Play()
@@ -38,7 +43,7 @@ function Lib:CreateUI(title)
 	wait(8)
 	
 	tabsFrame.Size = UDim2.new(0.35, 0, 0.8, 0)
-	tabsFrame.Position = UDim2.new(0.015,0,0.15,0)
+	tabsFrame.Position = UDim2.new(0.015,0,0,0)
 	tabsFrame.BorderSizePixel = 0
 	tabsFrame.BackgroundTransparency = 1
 	tabsFrame.CanvasSize = UDim2.new(0,0,0,0)
@@ -213,7 +218,7 @@ function Lib:CreateUI(title)
 				local corner = Instance.new("UICorner")
 				corner.CornerRadius = UDim.new(0.3,0.8)
 				corner.Parent = textbox
-				textbox.Text = ObjectName
+				textbox.Text = ""
 				textbox.Font =  Enum.Font.FredokaOne
 				textbox.PlaceholderText = ObjectName
 				textbox.PlaceholderColor3 = Color3.new(0.12549, 0.623529, 0.227451)
@@ -274,15 +279,23 @@ function InitUILib()
 	return Lib
 end
 
-local comment = [[
-local window = Lib:CreateUI("LibUI")
+local example = [[local window = Lib:CreateUI("LibUI")
 
 
-local tab1 = window:NewTab("Tab1"):NewObject("Toggle!", "Toggle", function(text)
+local tab1 = window:NewTab("Tab1")
+
+tab1:NewObject("Label", "Text")
+
+tab1:NewObject("TextButton", "Button", function()
+	print("hello!")
+end)
+
+tab1:NewObject("TextBox", "Input", function(text)
 	print(text)
 end)
-local tab2 = window:NewTab("Tab2"):NewObject("Kick!", "Toggle", function(text)
-	game.Players.LocalPlayer:Kick(text)
-end)
-]]
 
+tab1:NewObject("Toggle", "Toggle", function(state)
+	print(state)
+end)
+
+window:NewTab("Tab2")]]
