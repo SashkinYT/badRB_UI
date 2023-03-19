@@ -191,7 +191,7 @@ function Lib:CreateUI(title)
 				label.Font = Enum.Font.FredokaOne
 				label.TextScaled = true
 				label.BorderSizePixel = 0
-				label.Position = UDim2.new(0.01,0,0,objectsC*52.5)
+				label.Position = UDim2.new(0.01,0,0,objectsC*55)
 				label.Size = UDim2.new(0.9,0,0,50)
 				label.BackgroundColor3 = Color3.new(0.203922, 1, 0.364706)
 				label.TextColor3 = Color3.new(0,0,0)
@@ -206,7 +206,7 @@ function Lib:CreateUI(title)
 				button.Font = Enum.Font.FredokaOne
 				button.TextScaled = true
 				button.BorderSizePixel = 0
-				button.Position = UDim2.new(0.01,0,0,objectsC*52.5)
+				button.Position = UDim2.new(0.01,0,0,objectsC*55)
 				button.Size = UDim2.new(0.9,0,0,50)
 				button.BackgroundColor3 = Color3.new(0.2,0.25,0.25)
 				button.TextColor3 = Color3.new(0.203922, 1, 0.364706)
@@ -224,7 +224,7 @@ function Lib:CreateUI(title)
 				textbox.PlaceholderColor3 = Color3.new(0.12549, 0.623529, 0.227451)
 				textbox.TextScaled = true
 				textbox.BorderSizePixel = 0
-				textbox.Position = UDim2.new(0.01,0,0,objectsC*52.5)
+				textbox.Position = UDim2.new(0.01,0,0,objectsC*55)
 				textbox.Size = UDim2.new(0.9,0,0,50)
 				textbox.BackgroundColor3 = Color3.new(0.2,0.25,0.25)
 				textbox.TextColor3 = Color3.new(0.203922, 1, 0.364706)
@@ -246,7 +246,7 @@ function Lib:CreateUI(title)
 				button.Font = Enum.Font.FredokaOne
 				button.TextScaled = true
 				button.BorderSizePixel = 0
-				button.Position = UDim2.new(0.01,0,0,objectsC*52.5)
+				button.Position = UDim2.new(0.01,0,0,objectsC*55)
 				button.Size = UDim2.new(0.9,0,0,50)
 				button.BackgroundColor3 = Color3.new(0.866667, 0.341176, 0.0941176)
 				button.TextColor3 = Color3.new(0, 0, 0)
