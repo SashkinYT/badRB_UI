@@ -1,5 +1,5 @@
 # badRB_UI
-Really bad Roblox UI
+Really bad Roblox UI Library for exploit scripts
 
 ![image](https://user-images.githubusercontent.com/74656533/226190565-e8c26127-0977-43f8-a51e-fcb8bd0a3710.png)
 
