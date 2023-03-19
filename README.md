@@ -11,7 +11,7 @@ local Lib = InitUILib()
 ```
 ## Create window:
 ```lua
-local window = Lib:CreateUI("Window")
+local window = Lib:CreateUI("Title")
 ```
 ## Create tab:
 ```lua
@@ -19,17 +19,17 @@ local tab = window:NewTab("Tab")
 ```
 ## Create label
 ```lua
-tab:NewObject("Name", "Text")
+tab:NewObject("The text that will be placed on the label", "Text")
 ```
 ## Create button
 ```lua
-tab:NewObject("Name", "Button", function()
+tab:NewObject("The text that will be placed on the button", "Button", function()
     print("Hello!")
 end)
 ```
 ## Create toggle
 ```lua
-tab:NewObject("Name", "Toggle", function(state)
+tab:NewObject("The text that will be placed on the toggle", "Toggle", function(state)
     if state then
         print("Hello!")
     end
@@ -37,7 +37,7 @@ end)
 ```
 ## Create textbox
 ```lua
-tab:NewObject("Name", "Input", function(text)
+tab:NewObject("The text that will be placed on the textbox", "Input", function(text)
     print(text)
 end)
 ```
