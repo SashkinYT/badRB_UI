@@ -37,7 +37,7 @@ end)
 ```
 ## Create textbox
 ```lua
-tab:NewObject("The text that will be placed on the textbox", "Input", function(text)
+tab:NewObject("The PlaceholderText that will be placed on the textbox", "Input", function(text)
     print(text)
 end)
 ```
