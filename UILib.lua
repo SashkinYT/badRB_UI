@@ -42,7 +42,7 @@ function Lib:CreateUI(title)
 	
 	wait(8)
 	
-	tabsFrame.Size = UDim2.new(0.35, 0, 0.8, 0)
+	tabsFrame.Size = UDim2.new(0.35, 0, 0.95, 0)
 	tabsFrame.Position = UDim2.new(0.015,0,0,0)
 	tabsFrame.BorderSizePixel = 0
 	tabsFrame.BackgroundTransparency = 1
